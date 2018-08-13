@@ -1,1 +1,10 @@
-/* your styles go here */
+#github-graph {
+    /* min-width: 688px; */
+    overflow-x: auto;
+}
+.customer i {
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+    padding: 5px;
+}

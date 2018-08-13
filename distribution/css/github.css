@@ -1,0 +1,67 @@
+.graph-before-activity-overview {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+
+.graph-canvas {
+    stroke-opacity: 0.5
+}
+
+.dashboards-overview-cards .graph-canvas .dots {
+    padding: 43px 0
+}
+
+.graph-canvas .activity {
+    /* width: 400px; */
+    padding: 10px;
+    margin: 100px auto 0;
+    color: #2f363d;
+    text-align: center;
+    border-radius: 3px
+}
+
+.graph-canvas .dots {
+    margin: 0 auto
+}
+
+.graph-canvas>.activity {
+    display: none
+}
+
+.graph-canvas.is-graph-loading>.activity, .graph-canvas.is-graph-without-usable-data>.activity, .graph-canvas.is-graph-empty>.activity {
+    display: block
+}
+
+.calendar-graph {
+    height: 126px;
+    padding: 5px 0 0;
+    text-align: center
+}
+
+.calendar-graph.days-selected rect.day {
+    opacity: 0.5
+}
+
+.calendar-graph.days-selected rect.day.active {
+    opacity: 1
+}
+
+.calendar-graph .dots {
+    width: 64px;
+    height: 64px;
+    margin: 20px auto 0
+}
+
+.calendar-graph text.month {
+    font-size: 10px;
+    fill: #767676
+}
+
+.calendar-graph text.wday {
+    font-size: 9px;
+    fill: #767676
+}
+
+.py-2 {
+    background-color: white;
+}
