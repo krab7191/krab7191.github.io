@@ -10,8 +10,7 @@ function getContribGraph() {
 }
 function appendContribs(data) {
     var graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
-    graph = graph.substring(graph.indexOf(">") + 2, graph.indexOf("</svg>") + 6);
-    graph = graph + "</div>";
+    graph = graph.substring(graph.indexOf(">") + 6, graph.indexOf("</svg>") + 6) + "</div>";
     $("#github-graph").html("<a href='https://github.com/krab7191'>My GitHub contributions</a>" + graph);
     $("#github-graph > div").addClass("col-md-12").addClass("col-lg-12").addClass("mx-auto");
 }
