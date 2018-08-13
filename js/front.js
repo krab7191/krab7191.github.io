@@ -196,7 +196,7 @@ $(function () {
     }, {
         offset: '90%'
     });
-    
+
     $('[data-animate-hover]').hover(function () {
         $(this).css({
             opacity: 1
@@ -262,7 +262,7 @@ function map() {
                 zoom: 16,
                 panControl: false,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
+            };
             var map = new google.maps.Map(mapCanvas, mapOptions);
 
             var markerImage = 'img/marker.png';
