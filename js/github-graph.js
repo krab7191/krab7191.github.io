@@ -2,8 +2,11 @@
 // When this script loads, scrape GitHub profile for contrib graph
 
 function getContribGraph() {
+    //Use proxy to avoid CORS issues
+    var proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
+    var url = proxy + 'https://github.com/krab7191';
     $.get({
-        url: "https://github.com/krab7191"
+        url: url
     }).then(function (data) {
         appendContribs(data);
     });
