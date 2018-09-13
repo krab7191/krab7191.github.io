@@ -1,7 +1,5 @@
 $(function () {
 
-    $('.customer img').tooltip();
-
     $('.counter').counterUp({
         delay: 10,
         time: 1000

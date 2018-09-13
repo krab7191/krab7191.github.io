@@ -1,6 +1,8 @@
 //jshint esversion: 6
 // When this script loads, scrape GitHub profile for contrib graph
 
+// Author: Karsten Rabe
+
 function getContribGraph() {
     //Use proxy to avoid CORS issues
     var proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
