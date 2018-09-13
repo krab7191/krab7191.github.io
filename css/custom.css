@@ -13,3 +13,8 @@ noscript {
     margin: 0 auto;
     z-index: 100;
 }
+
+.outline-shadow {
+    box-shadow: 0 0 3pt 2pt #565656;
+    margin-bottom: 10px;
+}
