@@ -625,19 +625,27 @@ footer.main-footer p.social a {
 }
 
 footer.main-footer p.social a.github {
-  background-color: #006527;
+  background-color: #282D32;
 }
 
-footer.main-footer p.social a.gplus {
-  background-color: #c21f25;
+footer.main-footer p.social a.linkedin {
+  background-color: #0073B7;
 }
 
-footer.main-footer p.social a.instagram {
-  background-color: #cd4378;
+footer.main-footer p.social a.stack-overflow {
+  background-color: #FF7C00;
 }
 
-footer.main-footer p.social a.email {
-  background-color: aquamarine;
+footer.main-footer p.social a.askubuntu {
+  background-color: white;
+}
+
+/* Not FA icon for askubuntu: Workaround */
+i.askubuntu img {
+  margin-top: -3px;
+  border-radius: 50%;
+  height: 45px;
+  width: auto;
 }
 
 footer.main-footer p {
