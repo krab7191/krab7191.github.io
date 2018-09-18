@@ -562,19 +562,6 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 /*
 *
 * =====================
-* CUSTOEMRS
-* =====================
-*
-*/
-
-.customers-section img {
-  padding: 10px;
-  max-width: 80px;
-}
-
-/*
-*
-* =====================
 * CONTACT
 * =====================
 *
@@ -582,18 +569,6 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
 
 .form-control {
   margin-bottom: 20px;
-}
-
-/*
-*
-* =====================
-* MAP
-* =====================
-*
-*/
-
-#map {
-  height: 400px;
 }
 
 /*

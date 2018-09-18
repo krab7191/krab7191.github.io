@@ -105,7 +105,7 @@ $(function () {
         $('#detail').slideUp();
     }
 
-    $('#filter button, #detail .close').on('click', function () {
+    $('#filter a, #detail .close').on('click', function () {
         closeReference();
     });
 
