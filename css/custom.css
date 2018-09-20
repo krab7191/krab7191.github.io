@@ -18,3 +18,12 @@ noscript {
     box-shadow: 0 0 3pt 2pt #565656;
     margin-bottom: 10px;
 }
+
+.loading-img {
+    height: 150px;
+    width: auto;
+}
+
+#github-scraper-code {
+    display: none;
+}

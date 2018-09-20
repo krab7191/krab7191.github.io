@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css">
   <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
   <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
   <link rel="stylesheet" href="vendor/animate.css/animate.css">
@@ -79,65 +80,29 @@
         <div data-animate="fadeInUp" class="col-lg-6 text-center">
           <img src="img/profile.png" class="image rounded-circle img-fluid outline-shadow" alt="Karsten">
           <p>
-            Hi, I'm Karsten. I'm a full-stack web developer, hobby linguist, and FOSS enthusiast. I love Linux and javascript. When I'm not programming for work you can find me learning more about coding, tinkering with a new project on my Raspberry Pi, learning about a new technology, or studying a foreign language.
+            Hi, I'm Karsten. I'm a full-stack web developer, hobby linguist, and FOSS enthusiast. I love Linux and
+            javascript. When I'm not programming for work you can find me learning more about coding, tinkering with a
+            new project on my Raspberry Pi, learning about a new technology, or studying a foreign language.
           </p>
         </div>
-        <div data-animate="fadeInUp" class="col-lg-6">
-          <div class="skill-item">
-            <div class="progress-title">HTML</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 87%" aria-valuenow="0" aria-valuemin="87" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">CSS</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 88%" aria-valuenow="70" aria-valuemin="88" aria-valuemax="100"
-                class="progress-bar progress-bar-skill2"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">JavaScript</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">Git</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">Bash</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">React</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill6"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">Handlebars</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill7"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">Node.Js</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill8"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="progress-title">mysql</div>
-            <div class="progress">
-              <div role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill9"></div>
-            </div>
-          </div>
+        <div data-animate="fadeInUp" class="col-lg-6 text-center">
+          <pre>
+            <code class="language-js">
+              function selectCharacter(id) {
+                var $c = $("#" + id);
+                move(id, 'your-character');
+                align(id, 'good');
+                var $r = $("#options div").detach();
+                for (var i = 0; i &lt; $r.length; i++) {
+                  $("#enemies").append($r[i]);
+                  align($r[i].id, 'evil' );
+                }
+                $(".char-box").off("click");
+                message("choose", id, null, " as your character" );
+                attachOpponentHandlers();
+              }
+            </code>
+          </pre>
         </div>
       </div>
     </div>
@@ -199,8 +164,34 @@
       <div class="row showcase text-center">
         <div data-animate="fadeUp" class="row col-lg-12 col-md-12 mx-auto border border-gray-dark py-2 graph-before-activity-overview"
           id="github-graph">
-          <img src="img/Loading_icon.gif" alt="Github contributions loading..." class="img-fluid mx-auto rounded d-block">
+          <img src="img/Loading_icon.gif" alt="Github contributions loading..." class="img-fluid mx-auto rounded d-block loading-img">
         </div>
+      </div>
+      <div class="row showcase bg-white">
+        <p class="text-dark">
+          <button id="expand-code" class="btn btn-secondary">Expand</button>&nbsp; GitHub page scraper code
+        </p>
+        <pre>
+        <code class="language-js" id="github-scraper-code">
+          function getContribGraph() {
+            //Use proxy to avoid CORS issues
+            var proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
+            var url = proxy + 'https://github.com/krab7191';
+            $.get({
+              url: url
+            }).then(function (data) {
+              appendContribs(data);
+            });
+          }
+
+          function appendContribs(data) {
+            var graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
+            graph = graph.substring(graph.indexOf(">") + 6, graph.indexOf("&lt;/svg>") + 6) + "&lt;/div>";
+            $("#github-graph").html("&lt;a href='https://github.com/krab7191'>My GitHub contributions&lt;/a>" +graph);
+            $("#github-graph > div").addClass("col-md-12").addClass("col-lg-12").addClass("mx-auto");
+          }
+        </code>
+        </pre>
       </div>
     </div>
     <div class="dark-mask"></div>
@@ -612,6 +603,7 @@
   </footer>
 
   <!-- JavaScript files-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/popper.js/umd/popper.min.js"> </script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

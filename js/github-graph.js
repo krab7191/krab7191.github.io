@@ -22,6 +22,22 @@ function appendContribs(data) {
 
 // When document ready, put graph in 'github-graph' container
 
-$(document).ready(function() {
+$(document).ready(function () {
     getContribGraph();
+    $("#expand-code").on("click", function () {
+        var but = $("#expand-code").html();
+        if (but === "Expand") {
+            $("#expand-code").html("Collapse");
+            $("#github-scraper-code").animate({
+                height: "toggle"
+            }, 500);
+        }
+        else {
+            $("#expand-code").html("Expand");
+            $("#github-scraper-code").animate({
+                height: "toggle"
+            }, 500);
+        }
+    });
 });
+
