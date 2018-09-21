@@ -6,6 +6,7 @@ $(function () {
     });
 
     $('.link-scroll').on('click', function (e) {
+        $(".navbar-toggler").click();
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
