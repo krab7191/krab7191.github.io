@@ -39,14 +39,14 @@
   </head>
 
   <body>
-    <noscript class="center-text">We use JavaScript in 2018. So should you!</noscript>
+    <noscript class="center-text">We use JavaScript in 2019. So should you!</noscript>
     <!-- Reference item-->
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
           <a
-            href="https://krab7191.github.io"
+            href="/"
             tabindex="0"
             class="navbar-brand scrollTo">Karsten Rabe - Developer</a>
           <button
@@ -74,6 +74,11 @@
               <li class="nav-item">
                 <a href="#contact" tabindex="4" class="nav-link link-scroll">Contact</a>
               </li>
+              <li class='nav-item'>
+                <a href='https://ravenseyesolutions.tech/' tabindex="5"
+                  class='nav-link link-scroll' target="_blank">Raven's Eye
+                  Solutions</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -83,13 +88,10 @@
     <section
       id="intro"
       style="background: url(img/home.jpg) center center no-repeat;
-      background-size: cover;"
+      background-size: cover; background-color: rgb(36, 36, 36, .8);
+      background-blend-mode: overlay;"
       class="intro-section pb-2">
       <div class="container text-center">
-        <div data-animate="fadeInDown" class="logo">
-          <!-- Add logo later ?? -->
-          <!-- <img src="img/logo-big.png" alt="logo" width="130"> -->
-        </div>
         <h1 data-animate="fadeInDown" class="text-shadow mb-5">
           Hello, hola, bonjour, guten Tag, Γειά σας, مرحبا!
         </h1>
@@ -114,7 +116,7 @@
               />
             <p>
               Hi, I'm Karsten. I'm a full-stack web developer, hobby linguist,
-              and FOSS enthusiast. I love Linux and javascript. When I'm not
+              and FOSS enthusiast. I love Linux and JavaScript. When I'm not
               programming for work you can find me learning more about coding,
               tinkering with a new project on my Raspberry Pi, learning about a
               new technology, or studying a foreign language.
@@ -124,7 +126,6 @@
             <pre>
             <code class="language-js">
               function selectCharacter(id) {
-                <!-- const $c = $("#" + id); -->
                 move(id, 'your-character');
                 align(id, 'good');
                 const $r = $("#options div").detach();
@@ -169,8 +170,8 @@
             </div>
             <h3 class="heading mb-3 text-400">Web Applications</h3>
             <p class="text-left description">
-              I'm newer to the back-end than the front, but have proven
-              experience in building MERN, MEAN and LAMP stack applications. I
+              I have proven experience building MERN, MEAN and LAMP stack
+              applications. I
               also have experience using and writing custom ORMs for SQL.
               Although I don't have much technical experience with network
               security, I'm fascinated by it. My favorite DOS attack is the Slow
@@ -188,11 +189,6 @@
               environment. I have experience with Ubuntu, Mint, Elementary,
               Kali, Parrot OS, and Raspbian, and have spent years customizing
               and scripting in these environments.
-            </p>
-            <p class="text-left description">
-              You can always find me with a rooted Android device trying out a
-              new ROM. I'm currently testing XenonHD on the Motorola Moto G4
-              Play.
             </p>
           </div>
         </div>
@@ -280,8 +276,18 @@
     <section id="references">
       <div class="container">
         <div class="col-sm-12">
-          <div class="mb-5 text-center">
+          <div class="mb-5 text-center" style='border-bottom: solid 1px #ccc;
+            padding-bottom: 30px;'>
             <h2 data-animate="fadeInUp" class="title">My work</h2>
+            <p data-animate="fadeInUp">I'm a co-owner and team lead at
+              <a href='https://ravenseyesolutions.tech/' target="_blank">Raven's
+                Eye Solutions</a>. Please <a
+                href='https://ravenseyesolutions.tech/#contact-form'
+                target='_blank'>get in touch </a> if you need work done!
+            </p>
+          </div>
+          <div class='text-center mb-4' data-animate='fadeInUp'>
+            Here are some of the projects I completed in bootcamp
           </div>
           <ul id="filter" data-animate="fadeInUp">
             <li class="active">
@@ -293,9 +299,6 @@
             <li>
               <a href="#" data-filter="node">NodeJS</a>
             </li>
-            <!-- <li>
-            <a href="#" data-filter="firebase">Firebase</a>
-          </li> -->
             <li>
               <a href="#" data-filter="mysql">MySQL</a>
             </li>
@@ -1033,21 +1036,11 @@
                 class="external github wow fadeInUp">
                 <i class="fab fa-github"></i>
               </a>
-              <a
-                href="https://stackoverflow.com/users/9707483/karsten-rabe"
-                class="external stack-overflow wow fadeInUp">
-                <i class="fab fa-stack-overflow"></i>
-              </a>
-              <a
-                href="https://askubuntu.com/users/657638/karsten-rabe"
-                class="external ask-ubuntu wow fadeInUp">
-                <i class="askubuntu"><img src="img/askubuntu.png" /></i>
-              </a>
             </p>
           </div>
           <!-- /.6-->
           <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2018 Karsten Rabe. All rights reserved.</p>
+            <p>Karsten Rabe &copy; 2019</p>
           </div>
           <div class="col-12 mt-4">
             <p class="template-bootstrapious">
