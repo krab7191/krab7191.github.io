@@ -951,9 +951,11 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <form
+              name="contact-form"
+              data-netlify="true"
+              netlify-honeypot="honeypot"
               id="contact-form"
-              method="POST"
-              action="https://formspree.io/karstenrabe91@gmail.com">
+              method="POST">
               <div class="messages"></div>
               <div class="controls">
                 <div class="row">
@@ -966,6 +968,9 @@
                       class="form-control"
                       />
                   </div>
+                  <input name="honeypot" type='email' style="visibility:
+                    hidden; display:
+                    none;" />
                   <div class="col-md-6">
                     <input
                       type="text"
