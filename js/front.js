@@ -34,15 +34,15 @@ $(function () {
         }
     });
 
-    $('#filter a').click(e => {
+    $('#filter a').click(function (e) {
         e.preventDefault();
 
         $('#filter li').removeClass('active');
         $(this).parent('li').addClass('active');
 
-        const categoryToFilter = $(this).attr('data-filter');
+        var categoryToFilter = $(this).attr('data-filter');
 
-        $('.reference-item').each(() => {
+        $('.reference-item').each(function () {
 
             if ($(this).data('category') === categoryToFilter || categoryToFilter === 'all') {
                 $(this).show();
