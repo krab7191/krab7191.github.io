@@ -53,17 +53,17 @@ $(function () {
 
     });
 
-    $('.reference a').on('click', e => {
+    $('.reference a').on('click', function (e) {
 
         e.preventDefault();
 
-        const title = $(this).find('.reference-title').text(),
+        var title = $(this).find('.reference-title').text(),
             description = $(this).siblings('.reference-description').html();
 
         $('#detail-title').text(title);
         $('#detail-content').html(description);
 
-        const images = $(this).siblings('.reference-description').data('images').split(',');
+        var images = $(this).siblings('.reference-description').data('images').split(',');
         if (images.length > 0) {
             sliderContent = '';
             for (let i = 0; i < images.length; ++i) {
