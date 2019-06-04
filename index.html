@@ -13,20 +13,20 @@
       href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
       integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
       crossorigin="anonymous"
-    />
+      />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300"
-    />
+      />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
-    />
+      />
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css" />
     <link
       rel="stylesheet"
       href="vendor/owl.carousel/assets/owl.theme.default.css"
-    />
+      />
     <link rel="stylesheet" href="vendor/animate.css/animate.css" />
     <link rel="stylesheet" href="css/style.green.css" id="theme-stylesheet" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -39,9 +39,7 @@
   </head>
 
   <body>
-    <noscript class="center-text"
-      >We use JavaScript in 2018. So should you!</noscript
-    >
+    <noscript class="center-text">We use JavaScript in 2018. So should you!</noscript>
     <!-- Reference item-->
     <!-- navbar-->
     <header class="header">
@@ -50,9 +48,7 @@
           <a
             href="https://krab7191.github.io"
             tabindex="0"
-            class="navbar-brand scrollTo"
-            >Karsten Rabe - Developer</a
-          >
+            class="navbar-brand scrollTo">Karsten Rabe - Developer</a>
           <button
             type="button"
             data-toggle="collapse"
@@ -60,31 +56,23 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            class="navbar-toggler navbar-toggler-right"
-          >
+            class="navbar-toggler navbar-toggler-right">
             <span class="fa fa-bars"></span>
           </button>
           <div id="navbarcollapse" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a href="#intro" tabindex="1" class="nav-link link-scroll"
-                  >Intro</a
-                >
+                <a href="#intro" tabindex="1" class="nav-link link-scroll">Intro</a>
               </li>
               <li class="nav-item">
-                <a href="#about" tabindex="2" class="nav-link link-scroll"
-                  >About</a
-                >
+                <a href="#about" tabindex="2" class="nav-link link-scroll">About</a>
               </li>
               <li class="nav-item">
-                <a href="#references" tabindex="3" class="nav-link link-scroll"
-                  >My work</a
-                >
+                <a href="#references" tabindex="3" class="nav-link link-scroll">My
+                  work</a>
               </li>
               <li class="nav-item">
-                <a href="#contact" tabindex="4" class="nav-link link-scroll"
-                  >Contact</a
-                >
+                <a href="#contact" tabindex="4" class="nav-link link-scroll">Contact</a>
               </li>
             </ul>
           </div>
@@ -94,9 +82,9 @@
     <!-- Intro Image-->
     <section
       id="intro"
-      style="background: url(img/home.jpg) center center no-repeat; background-size: cover;"
-      class="intro-section pb-2"
-    >
+      style="background: url(img/home.jpg) center center no-repeat;
+      background-size: cover;"
+      class="intro-section pb-2">
       <div class="container text-center">
         <div data-animate="fadeInDown" class="logo">
           <!-- Add logo later ?? -->
@@ -123,7 +111,7 @@
               src="img/profile.png"
               class="image rounded-circle img-fluid outline-shadow"
               alt="Karsten"
-            />
+              />
             <p>
               Hi, I'm Karsten. I'm a full-stack web developer, hobby linguist,
               and FOSS enthusiast. I love Linux and javascript. When I'm not
@@ -136,11 +124,11 @@
             <pre>
             <code class="language-js">
               function selectCharacter(id) {
-                var $c = $("#" + id);
+                const $c = $("#" + id);
                 move(id, 'your-character');
                 align(id, 'good');
-                var $r = $("#options div").detach();
-                for (var i = 0; i &lt; $r.length; i++) {
+                const $r = $("#options div").detach();
+                for (let i = 0; i &lt; $r.length; i++) {
                   $("#enemies").append($r[i]);
                   align($r[i].id, 'evil' );
                 }
@@ -221,22 +209,19 @@
             <a
               href="#contact"
               tabindex="5"
-              class="btn btn-outline-light link-scroll"
-            >
+              class="btn btn-outline-light link-scroll">
               <i class="fa fa-address-book" aria-hidden="true"></i> Contact me
             </a>
             <a
               href="Resume.pdf"
               target="_blank"
-              class="btn btn-outline-light link-scroll"
-            >
+              class="btn btn-outline-light link-scroll">
               <i class="fa fa-file" aria-hidden="true"></i> My Resume
             </a>
             <a
               href="KarstenRabe-publicKey.asc"
               target="_blank"
-              class="btn btn-outline-light link-scroll"
-            >
+              class="btn btn-outline-light link-scroll">
               <i class="fa fa-key" aria-hidden="true"></i> PGP Key
             </a>
           </p>
@@ -246,43 +231,42 @@
     <section
       id="statistics"
       data-dir="up"
-      style='background: url("img/parallax.jpg");'
-      class="statistics-section text-white parallax parallax"
-    >
+      style='background: url(" img/parallax.jpg" );'
+      class="statistics-section text-white parallax parallax">
       <div class="container">
         <div class="row showcase text-center">
           <div
             data-animate="fadeUp"
-            class="row col-lg-12 col-md-12 mx-auto border border-gray-dark py-2 graph-before-activity-overview"
-            id="github-graph"
-          >
+            class="row col-lg-12 col-md-12 mx-auto border border-gray-dark py-2
+            graph-before-activity-overview"
+            id="github-graph">
             <img
               src="img/Loading_icon.gif"
               alt="Github contributions loading..."
               class="img-fluid mx-auto rounded d-block loading-img"
-            />
+              />
           </div>
         </div>
         <div class="row showcase bg-white">
           <p class="text-dark">
-            <button id="expand-code" class="btn btn-secondary">Expand</button
-            >&nbsp; GitHub page scraper code
+            <button id="expand-code" class="btn btn-secondary">Expand</button>&nbsp;
+            GitHub page scraper code
           </p>
           <pre id="github-scraper-code">
         <code class="language-js">
           function getContribGraph() {
             //Use proxy to avoid CORS issues
-            var proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
-            var url = proxy + 'https://github.com/krab7191';
+            const proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
+            const url = proxy + 'https://github.com/krab7191';
             $.get({
               url: url
-            }).then(function (data) {
+            }).then(data => {
               appendContribs(data);
             });
           }
 
           function appendContribs(data) {
-            var graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
+            let graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
             graph = graph.substring(graph.indexOf(">") + 6, graph.indexOf("&lt;/svg>") + 6) + "&lt;/div>";
             $("#github-graph").html("&lt;a href='https://github.com/krab7191'>My GitHub contributions&lt;/a>" +graph);
             $("#github-graph > div").addClass("col-md-12").addClass("col-lg-12").addClass("mx-auto");
@@ -340,8 +324,7 @@
             <div class="row">
               <div
                 data-category="react"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/runamok1.png" alt="" class="img-fluid" />
@@ -353,9 +336,9 @@
                     </div>
                   </a>
                   <div
-                    data-images="img/runamok1.png, img/runamok2.png, img/runamok3.png, img/runamok4.png, img/runamok5.png"
-                    class="sr-only reference-description"
-                  >
+                    data-images="img/runamok1.png, img/runamok2.png,
+                    img/runamok3.png, img/runamok4.png, img/runamok5.png"
+                    class="sr-only reference-description">
                     <p>
                       After graduation, several classmates and myself have
                       started a business, and this is one of the first
@@ -366,24 +349,19 @@
                       <a
                         href="https://run-amok-free.herokuapp.com/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/krab7191/Run-Amok-Free"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="react"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/amphora.png" alt="" class="img-fluid" />
@@ -396,8 +374,7 @@
                   </a>
                   <div
                     data-images="img/amphora.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       This MERN stack web application uses the unofficial
                       Pandora API to play your tunes! Based on the Linux Pandora
@@ -408,24 +385,19 @@
                       <a
                         href="https://amphora-web.herokuapp.com/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/krab7191/Amphora"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="react"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/starrlight.png" alt="" class="img-fluid" />
@@ -438,8 +410,7 @@
                   </a>
                   <div
                     data-images="img/starrlight.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       My final Bootcamp team and I built this app for Starrlight
                       Meadery in Pittsboro. It enables them to migrate from
@@ -449,16 +420,12 @@
                       <a
                         href="https://starrlightwineapp.herokuapp.com/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/tlburchh/FourMusketeers"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
@@ -466,8 +433,7 @@
 
               <div
                 data-category="react"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/memory.png" alt="" class="img-fluid" />
@@ -480,8 +446,7 @@
                   </a>
                   <div
                     data-images="img/memory.png, img/memory2.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       This heavy-metal guitarist themed memory game is built
                       with React and styled implementing Google's beautiful
@@ -491,16 +456,12 @@
                       <a
                         href="https://krab7191.github.io/memory-game/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/krab7191/memory-game"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
@@ -508,8 +469,7 @@
 
               <div
                 data-category="handlebars"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/newsy.png" alt="" class="img-fluid" />
@@ -522,8 +482,7 @@
                   </a>
                   <div
                     data-images="img/newsy.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       Built with Handlebars, MongoDB, and Cheerio, this
                       lightweight news scraper allows users to comment on
@@ -533,16 +492,12 @@
                       <a
                         href="https://karsten-mongoose.herokuapp.com/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/krab7191/web-scraper"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
@@ -550,15 +505,14 @@
 
               <div
                 data-category="uiux"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img
                       src="img/hmh1.png"
                       alt="The home page of the heavy metal hangman site."
                       class="img-fluid"
-                    />
+                      />
                     <div class="overlay">
                       <div class="inner">
                         <h3 class="h4 reference-title">Hangman</h3>
@@ -571,8 +525,7 @@
                   </a>
                   <div
                     data-images="img/hmh1.png,img/hmh2.png,img/hmh3.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       This version of the classic hangman game showcases my love
                       for heavy metal music as well as front-end scripting.
@@ -581,32 +534,27 @@
                       <a
                         href="https://krab7191.github.io/word-guess-game/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                       <a
                         href="https://github.com/krab7191/word-guess-game/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View Source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View Source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="mysql"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img
                       src="img/bamazon.png"
                       alt="Bamazon command line"
                       class="img-fluid"
-                    />
+                      />
                     <div class="overlay">
                       <div class="inner">
                         <h3 class="h4 reference-title">Bamazon</h3>
@@ -615,9 +563,9 @@
                     </div>
                   </a>
                   <div
-                    data-images="img/bamazon1.png, img/bamazon2.png, img/bamazon3.png"
-                    class="sr-only reference-description"
-                  >
+                    data-images="img/bamazon1.png, img/bamazon2.png,
+                    img/bamazon3.png"
+                    class="sr-only reference-description">
                     <p>
                       Bamazon is a backend NodeJS application which implements
                       the packages inquirer, mysql and cli-table. It presents 3
@@ -628,25 +576,22 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/bamazon"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="handlebars"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img
                       src="img/burg.png"
                       alt="Burger Tracker"
                       class="img-fluid"
-                    />
+                      />
                     <div class="overlay">
                       <div class="inner">
                         <h3 class="h4 reference-title">Burger Time!</h3>
@@ -656,8 +601,7 @@
                   </a>
                   <div
                     data-images="img/burg.png, img/burg2.png, img/burg3.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       Burger time is a full stack Express application which
                       implements a custom ORM to interface with the MySQL
@@ -667,25 +611,20 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/burger"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                       <a
                         href="https://karsten-burger.herokuapp.com/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="node"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/cli-word.png" alt="" class="img-fluid" />
@@ -699,9 +638,9 @@
                     </div>
                   </a>
                   <div
-                    data-images="img/cli-word1.png, img/cli-word2.png, img/cli-word.png"
-                    class="sr-only reference-description"
-                  >
+                    data-images="img/cli-word1.png, img/cli-word2.png,
+                    img/cli-word.png"
+                    class="sr-only reference-description">
                     <p>
                       This Node app implements inquirer and is a great showcase
                       for modularization and OOP.
@@ -709,18 +648,15 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/cli-word-guess"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="node"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/liri.png" alt="" class="img-fluid" />
@@ -733,8 +669,7 @@
                   </a>
                   <div
                     data-images="img/liri.png, img/liri2.png, img/liri3.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       LIRI (Language Interpretation and Recognition Interface)
                       takes user input on the command line and hits the Twitter,
@@ -744,18 +679,15 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/liri-node-app"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                     </p>
                   </div>
                 </div>
               </div>
               <div
                 data-category="uiux"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/night-in.png" alt="" class="img-fluid" />
@@ -770,9 +702,9 @@
                     </div>
                   </a>
                   <div
-                    data-images="img/night-in2.png, img/night-in3.png, img/night-in4.png"
-                    class="sr-only reference-description"
-                  >
+                    data-images="img/night-in2.png, img/night-in3.png,
+                    img/night-in4.png"
+                    class="sr-only reference-description">
                     <p>
                       A Night In is in the early stages of production. It will
                       implement geolocation to show you delivery businesses for
@@ -783,17 +715,13 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/Night-In"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                       <a
                         href="https://krab7191.github.io/Night-In/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                     </p>
                   </div>
                 </div>
@@ -823,8 +751,7 @@
             </div> -->
               <div
                 data-category="uiux"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/gif.png" alt="" class="img-fluid" />
@@ -839,8 +766,7 @@
                   </a>
                   <div
                     data-images="img/gif2.png, img/gif3.png,img/gif4.png"
-                    class="sr-only reference-description"
-                  >
+                    class="sr-only reference-description">
                     <p>
                       Search for and play / pause animated GIFs from Giphy.com
                       using the Giphy API.
@@ -848,17 +774,13 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/gifs"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                       <a
                         href="https://krab7191.github.io/gifs/"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                     </p>
                   </div>
                 </div>
@@ -954,8 +876,7 @@
             </div> -->
               <div
                 data-category="uiux"
-                class="reference-item col-lg-3 col-md-6"
-              >
+                class="reference-item col-lg-3 col-md-6">
                 <div class="reference">
                   <a href="#">
                     <img src="img/starwars.png" alt="" class="img-fluid" />
@@ -967,9 +888,9 @@
                     </div>
                   </a>
                   <div
-                    data-images="img/starwars2.png, img/starwars3.png, img/starwars4.png"
-                    class="sr-only reference-description"
-                  >
+                    data-images="img/starwars2.png, img/starwars3.png,
+                    img/starwars4.png"
+                    class="sr-only reference-description">
                     <p>
                       A game which showcases beautiful frontend design with
                       jQuery and Bootstrap. Pick a character and and opponent
@@ -978,17 +899,13 @@
                     <p class="buttons text-center">
                       <a
                         href="https://github.com/krab7191/Star-Wars-RPG"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-github"></i> View source</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fab fa-github"></i> View source</a>
                       <a
                         href="https://krab7191.github.io/Star-Wars-RPG"
                         target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fa fa-globe"></i> View app</a
-                      >
+                        class="btn btn-outline-primary">
+                        <i class="fa fa-globe"></i> View app</a>
                     </p>
                   </div>
                 </div>
@@ -1026,8 +943,7 @@
     <section
       id="contact"
       data-animate="bounceIn"
-      class="contact-section contact"
-    >
+      class="contact-section contact">
       <div class="container">
         <header class="text-center">
           <h2 class="title">Contact me</h2>
@@ -1037,8 +953,7 @@
             <form
               id="contact-form"
               method="POST"
-              action="https://formspree.io/karstenrabe91@gmail.com"
-            >
+              action="https://formspree.io/karstenrabe91@gmail.com">
               <div class="messages"></div>
               <div class="controls">
                 <div class="row">
@@ -1049,7 +964,7 @@
                       placeholder="Firstname *"
                       required="required"
                       class="form-control"
-                    />
+                      />
                   </div>
                   <div class="col-md-6">
                     <input
@@ -1058,7 +973,7 @@
                       placeholder="Lastname *"
                       required="required"
                       class="form-control"
-                    />
+                      />
                   </div>
                   <div class="col-md-6">
                     <input
@@ -1067,7 +982,7 @@
                       placeholder="Email *"
                       required="required"
                       class="form-control"
-                    />
+                      />
                   </div>
                   <div class="col-md-6">
                     <input
@@ -1075,7 +990,7 @@
                       name="phone"
                       placeholder="Phone"
                       class="form-control"
-                    />
+                      />
                   </div>
                   <div class="col-md-12">
                     <textarea
@@ -1083,8 +998,7 @@
                       placeholder="Message *"
                       rows="4"
                       required="required"
-                      class="form-control"
-                    ></textarea>
+                      class="form-control"></textarea>
                   </div>
                   <div class="col-md-12 text-center">
                     <button type="submit" class="btn btn-outline-primary">
@@ -1106,27 +1020,23 @@
             <p class="social">
               <a
                 href="https://www.linkedin.com/in/karsten-rabe-94556b15b/"
-                class="external linkedin wow fadeInUp"
-              >
+                class="external linkedin wow fadeInUp">
                 <i class="fab fa-linkedin"></i>
               </a>
               <a
                 href="https://github.com/krab7191"
-                class="external github wow fadeInUp"
-              >
+                class="external github wow fadeInUp">
                 <i class="fab fa-github"></i>
               </a>
               <a
                 href="https://stackoverflow.com/users/9707483/karsten-rabe"
-                class="external stack-overflow wow fadeInUp"
-              >
+                class="external stack-overflow wow fadeInUp">
                 <i class="fab fa-stack-overflow"></i>
               </a>
               <a
                 href="https://askubuntu.com/users/657638/karsten-rabe"
-                class="external ask-ubuntu wow fadeInUp"
-              >
-                <i class="askubuntu"><img src="img/askubuntu.png"/></i>
+                class="external ask-ubuntu wow fadeInUp">
+                <i class="askubuntu"><img src="img/askubuntu.png" /></i>
               </a>
             </p>
           </div>
@@ -1145,7 +1055,8 @@
     </footer>
 
     <!-- JavaScript files-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper.js/umd/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

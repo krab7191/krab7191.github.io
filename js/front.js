@@ -19,9 +19,9 @@ $(function () {
         offset: 80
     });
 
-    $(window).scroll(function () {
+    $(window).scroll(() => {
 
-        var scroll = $(this).scrollTop();
+        const scroll = $(this).scrollTop();
 
         if ($(window).width() > 1250) {
             $('.parallax').css({
@@ -34,15 +34,15 @@ $(function () {
         }
     });
 
-    $('#filter a').click(function (e) {
+    $('#filter a').click(e => {
         e.preventDefault();
 
         $('#filter li').removeClass('active');
         $(this).parent('li').addClass('active');
 
-        var categoryToFilter = $(this).attr('data-filter');
+        const categoryToFilter = $(this).attr('data-filter');
 
-        $('.reference-item').each(function () {
+        $('.reference-item').each(() => {
 
             if ($(this).data('category') === categoryToFilter || categoryToFilter === 'all') {
                 $(this).show();
@@ -53,20 +53,20 @@ $(function () {
 
     });
 
-    $('.reference a').on('click', function (e) {
+    $('.reference a').on('click', e => {
 
         e.preventDefault();
 
-        var title = $(this).find('.reference-title').text(),
+        const title = $(this).find('.reference-title').text(),
             description = $(this).siblings('.reference-description').html();
 
         $('#detail-title').text(title);
         $('#detail-content').html(description);
 
-        var images = $(this).siblings('.reference-description').data('images').split(',');
+        const images = $(this).siblings('.reference-description').data('images').split(',');
         if (images.length > 0) {
             sliderContent = '';
-            for (var i = 0; i < images.length; ++i) {
+            for (let i = 0; i < images.length; ++i) {
                 sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
             }
         } else {
@@ -84,7 +84,7 @@ $(function () {
 
         if (sliderContent !== '') {
 
-            var slider = $('#detail-slider');
+            const slider = $('#detail-slider');
 
             if (slider.hasClass('owl-loaded')) {
                 slider.trigger('replace.owl.carousel', sliderContent);
@@ -106,7 +106,7 @@ $(function () {
         $('#detail').slideUp();
     }
 
-    $('#filter a, #detail .close').on('click', function () {
+    $('#filter a, #detail .close').on('click', () => {
         closeReference();
     });
 
@@ -115,9 +115,9 @@ $(function () {
     $('[data-animate]').waypoint(function (direction) {
         delayTime += 100;
 
-        var element = $(this.element);
+        const element = $(this.element);
 
-        $(this.element).delay(delayTime).queue(function (next) {
+        $(this.element).delay(delayTime).queue(next => {
             element.addClass('animated');
             element.addClass(element.data('animate'));
             delayTime = 0;
@@ -130,14 +130,14 @@ $(function () {
             offset: '90%'
         });
 
-    $('[data-animate-hover]').hover(function () {
+    $('[data-animate-hover]').hover(() => {
         $(this).css({
             opacity: 1
         });
         $(this).addClass('animated');
         $(this).removeClass($(this).data('animate'));
         $(this).addClass($(this).data('animate-hover'));
-    }, function () {
+    }, () => {
         $(this).removeClass('animated');
         $(this).removeClass($(this).data('animate-hover'));
     });
