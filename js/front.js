@@ -9,7 +9,7 @@ const showSiteMigrateModal = () => {
     TO = window.setInterval(function () {
         counterElem.textContent = count;
         if (count === 0) {
-            window.location.href = 'https://www.karstenrabe.dev/';
+            window.location.replace('https://www.karstenrabe.dev/');
         }
         count--;
     }, 1000);
