@@ -5,7 +5,7 @@ var counterElem = document.getElementById('redirectCounter');
 const showSiteMigrateModal = () => {
     const div = document.getElementById('siteMigrateModal');
     div.style.display = 'block';
-    TO.clearInterva();
+    TO && TO.clearInterval();
     TO = window.setInterval(function () {
         counterElem.textContent = count;
         if (count === 0) {
