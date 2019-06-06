@@ -13,6 +13,9 @@ const showSiteMigrateModal = () => {
         }
         count--;
     }, 1000);
+    if (count === 0) {
+        TO.clearInterval();
+    }
 }
 
 
