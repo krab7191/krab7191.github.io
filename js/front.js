@@ -7,6 +7,7 @@ const showSiteMigrateModal = () => {
     div.style.display = 'block';
     TO.clearInterva();
     TO = window.setInterval(function () {
+        counterElem.textContent = count;
         if (count === 5) {
             window.location.href = 'https://www.karstenrabe.dev/';
         }
