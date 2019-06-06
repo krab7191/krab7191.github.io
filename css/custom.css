@@ -18,6 +18,11 @@
     color: white;
 }
 
+#siteMigrateModal p {
+    color: #212529;
+    display: inline;
+}
+
 #github-graph {
     overflow-x: auto;
 }
