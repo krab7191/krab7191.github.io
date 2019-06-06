@@ -1,4 +1,26 @@
+var TO;
+var count = 0;
+var counterElem = document.getElementById('redirectCounter');
+
+const showSiteMigrateModal = () => {
+    const div = document.getElementById('siteMigrateModal');
+    div.style.display = 'block';
+    TO.clearInterva();
+    TO = window.setInterval(function () {
+        if (count === 5) {
+            window.location.href = 'https://www.karstenrabe.dev/';
+        }
+        count++;
+    }, 1000);
+}
+
+
 $(function () {
+    const url = window.location.href;
+    console.log(url);
+    if (url === 'https://krab7191.github.io/') {
+        showSiteMigrateModal();
+    }
 
     $('.counter').counterUp({
         delay: 10,
