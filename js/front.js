@@ -1,5 +1,5 @@
 var TO;
-var count = 0;
+var count = 5;
 var counterElem = document.getElementById('redirectCounter');
 
 const showSiteMigrateModal = () => {
@@ -8,10 +8,10 @@ const showSiteMigrateModal = () => {
     TO.clearInterva();
     TO = window.setInterval(function () {
         counterElem.textContent = count;
-        if (count === 5) {
+        if (count === 0) {
             window.location.href = 'https://www.karstenrabe.dev/';
         }
-        count++;
+        count--;
     }, 1000);
 }
 
