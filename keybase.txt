@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/karstenrabe
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://karstenrabe.dev
+  * I am karstenrabe (https://keybase.io/karstenrabe) on keybase.
+  * I have a public key ASCse6MZr8tO98mwPN8iv4BfqZ0yaSarg2aL-pO8-1g77Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ac7ba319afcb4ef7c9b03cdf22bf805fa99d326926ab83668bfa93bcfb583bec0a",
+      "host": "keybase.io",
+      "kid": "0120ac7ba319afcb4ef7c9b03cdf22bf805fa99d326926ab83668bfa93bcfb583bec0a",
+      "uid": "09c97b0ee0e91393db6cf79c86307319",
+      "username": "karstenrabe"
+    },
+    "merkle_root": {
+      "ctime": 1575247593,
+      "hash": "03093b4461c7ba753e3b230912f0aa91fcbb870e3c716a4fac8c3c819d1b8cba6a5fa1abe6e1d13e7c2636822c1d7ba215c0ad616cb452c8499457853c8f40fb",
+      "hash_meta": "3299f18233a86a1874dc35d1df273fefb07df1d71c29419c58ccdbd07963c475",
+      "seqno": 11678588
+    },
+    "service": {
+      "entropy": "oiQ2l/rJ3jN20MwkPZ/RwX+w",
+      "hostname": "karstenrabe.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.0.0"
+  },
+  "ctime": 1575247621,
+  "expire_in": 504576000,
+  "prev": "f26f0e9d3113eed7b2481e362a0197a03c0c8d18090dddb9b37fdabee09dec6c",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgrHujGa/LTvfJsDzfIr+AX6mdMmkmq4Nmi/qTvPtYO+wKp3BheWxvYWTESpcCCsQg8m8OnTET7teySB42KgGXoDwMjRgJDd25s3/avuCd7GzEIDgf+hBgHZoR50bJJsmiJkCSe+JQeqv0fRq6O5madPlmAgHCo3NpZ8RAmwCraJQjFaIUQBexnNgrcERoOUjaSw3g3FFk2/9QkfXHq+6YTpdu/y3xFdvYpIi0K06CzrTLtCBjOXFaWlgJD6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFW0+hBQIQvqObTFyaNT/ZeM/3yD6ziIQwkc5fH/uxjko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/karstenrabe
+
+==================================================================
