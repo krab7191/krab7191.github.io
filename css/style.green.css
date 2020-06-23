@@ -620,15 +620,14 @@ footer.main-footer p.social a.stack-overflow {
   background-color: #ff7c00;
 }
 
-footer.main-footer p.social a.askubuntu {
-  background-color: white;
+footer.main-footer p.social a.keybase {
+  background-color: #33A0FF;
 }
 
-/* Not FA icon for askubuntu: Workaround */
-i.askubuntu img {
-  margin-top: -3px;
-  border-radius: 50%;
-  height: 45px;
+footer.main-footer p.social a.keybase img.keybase-img {
+  margin-top: -13px;
+  margin-left: -1px;
+  height: 40px;
   width: auto;
 }
 
