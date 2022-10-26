@@ -52,3 +52,9 @@ noscript {
 #github-scraper-code {
     display: none;
 }
+
+#references-masonry {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid black;
+}

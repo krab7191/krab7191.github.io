@@ -54,11 +54,6 @@
             <li class="nav-item">
               <a href="#contact" tabindex="4" class="nav-link link-scroll">Contact</a>
             </li>
-            <li class='nav-item'>
-              <a href='https://ravenseyesolutions.info/' tabindex="5" class='nav-link link-scroll'
-                target="_blank">Raven's Eye
-                Solutions</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -207,8 +202,8 @@
         <code class="language-js">
           function getContribGraph() {
             //Use proxy to avoid CORS issues
-            const proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
-            const url = proxy + 'https://github.com/krab7191';
+            const proxy = 'https://corsproxy.io/?';
+            const url = proxy + encodeURIComponent('https://github.com/krab7191');
             $.get({
               url: url
             }).then(data => {
@@ -231,17 +226,39 @@
   <section id="references">
     <div class="container">
       <div class="col-sm-12">
-        <div class="mb-5 text-center" style='border-bottom: solid 1px #ccc;
-            padding-bottom: 30px;'>
-          <h2 data-animate="fadeInUp" class="title">My work</h2>
-          <p data-animate="fadeInUp">I'm a co-owner and team lead at
-            <a href='https://ravenseyesolutions.info/' target="_blank">Raven's
-              Eye Solutions</a>. Please <a href='https://ravenseyesolutions.info/#contact-form' target='_blank'>get in
-              touch </a> if you need work done!
-          </p>
-        </div>
         <div class='text-center mb-4' data-animate='fadeInUp'>
-          Some past projects from bootcamp and beyond
+          Work I've done
+        </div>
+        <div id="references-masonry" data-animate="fadeInUp">
+          <div class="row">
+            <div data-category="svelte" class="reference-item col-lg-3 col-md-6">
+              <div class="reference">
+                <a href="#">
+                  <img src="img/countrycruel.webp" alt="" class="img-fluid" />
+                  <div class="overlay">
+                    <div class="inner">
+                      <h3 class="h4 reference-title">Country Cruel</h3>
+                      <p>Loud, hard country music</p>
+                    </div>
+                  </div>
+                </a>
+                <div data-images="img/countrycruel.webp" class="sr-only reference-description">
+                  <p class="buttons text-center">
+                    <a href="https://countrycruel.com" target="_blank" class="btn btn-outline-primary">
+                      <i class="fa fa-globe"></i> View site</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-sm-12">
+        <div class='text-center mb-4' data-animate='fadeInUp'>
+          Old projects from bootcamp. (Not maintained)
         </div>
         <ul id="filter" data-animate="fadeInUp">
           <li class="active">
@@ -271,7 +288,7 @@
         </ul>
         <div id="detail">
           <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-10 mx-auto top-border">
               <span class="close">×</span>
               <div id="detail-slider" class="owl-carousel owl-theme"></div>
               <div class="text-center">
@@ -711,7 +728,7 @@
         </div>
         <!-- /.6-->
         <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-          <p>Karsten Rabe &copy; 2019</p>
+          <p>Karsten Rabe &copy; 2022</p>
         </div>
         <div class="col-12 mt-4">
           <p class="template-bootstrapious">

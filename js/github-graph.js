@@ -5,17 +5,21 @@
 
 function getContribGraph() {
     //Use proxy to avoid CORS issues
-    const proxy = 'https://urlreq.appspot.com/req?method=GET&url=';
-    const url = proxy + 'https://github.com/krab7191';
+    const proxy = 'https://corsproxy.io/?';
+    const url = proxy + encodeURIComponent('https://github.com/krab7191');
     $.get({
         url: url
-    }).then(function (data) {
-        appendContribs(data);
+    }).then(response => {
+        appendContribs(response);
+    })
+    .catch(err => {
+        console.log(err);
     });
 }
 function appendContribs(data) {
     let graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
     graph = graph.substring(graph.indexOf(">") + 6, graph.indexOf("</svg>") + 6) + "</div>";
+    console.log(graph);
     $("#github-graph").html("<a href='https://github.com/krab7191'>My GitHub contributions</a>" + graph);
     $("#github-graph > div").addClass("col-md-12").addClass("col-lg-12").addClass("mx-auto");
 }

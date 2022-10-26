@@ -38,13 +38,17 @@
     text-align: center
 }
 
-.calendar-graph.days-selected rect.day {
+.ContributionCalendar-day {
     opacity: 0.5
 }
 
-.calendar-graph.days-selected rect.day.active {
-    opacity: 1
+.ContributionCalendar-label {
+    padding-right: 1rem;
 }
+
+/* .ContributionCalendar-day {
+    opacity: 1
+} */
 
 .calendar-graph .dots {
     width: 64px;
