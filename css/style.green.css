@@ -631,6 +631,13 @@ footer.main-footer p.social a.keybase img.keybase-img {
   width: auto;
 }
 
+footer.main-footer p.social a.mastodon img.mastodon-img {
+  margin-top: -7px;
+  margin-left: -1px;
+  height: 40px;
+  width: auto;
+}
+
 footer.main-footer p {
   margin: 0;
   color: #eee;
