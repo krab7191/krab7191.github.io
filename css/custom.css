@@ -23,8 +23,10 @@
     display: inline;
 }
 
-#github-graph {
-    overflow-x: auto;
+.github-card {
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
 }
 
 noscript {

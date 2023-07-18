@@ -2,29 +2,8 @@ var TO;
 var count = 5;
 var counterElem = document.getElementById('redirectCounter');
 
-const showSiteMigrateModal = () => {
-    const div = document.getElementById('siteMigrateModal');
-    div.style.display = 'block';
-    TO && TO.clearInterval();
-    TO = window.setInterval(function () {
-        counterElem.textContent = count;
-        if (count === 0) {
-            window.location.replace('https://www.karstenrabe.dev/');
-        }
-        count--;
-    }, 1000);
-    if (count === 0) {
-        TO.clearInterval();
-    }
-}
-
 
 $(function () {
-    const url = window.location.href;
-    console.log(url);
-    if (url === 'https://krab7191.github.io/') {
-        showSiteMigrateModal();
-    }
 
     $('.counter').counterUp({
         delay: 10,

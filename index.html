@@ -20,6 +20,11 @@
   <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="css/github.css" />
   <link rel="shortcut icon" href="img/favicon.png" />
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+  </script>
+
+  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -185,49 +190,15 @@
   </section>
   <section id="statistics" data-dir="up" style='background: url(" img/parallax.jpg" );'
     class="statistics-section text-white parallax parallax">
-    <div class="container">
-      <div class="row showcase text-center">
-        <div data-animate="fadeUp" class="row col-lg-12 col-md-12 mx-auto border border-gray-dark py-2
-            graph-before-activity-overview" id="github-graph">
-          <img src="img/Loading_icon.gif" alt="Github contributions loading..."
-            class="img-fluid mx-auto rounded d-block loading-img" />
-        </div>
-      </div>
-      <div class="row showcase bg-white">
-        <p class="text-dark">
-          <button id="expand-code" class="btn btn-secondary">Expand</button>&nbsp;
-          GitHub page scraper code
-        </p>
-        <pre id="github-scraper-code">
-        <code class="language-js">
-          function getContribGraph() {
-            //Use proxy to avoid CORS issues
-            const proxy = 'https://corsproxy.io/?';
-            const url = proxy + encodeURIComponent('https://github.com/krab7191');
-            $.get({
-              url: url
-            }).then(data => {
-              appendContribs(data);
-            });
-          }
-
-          function appendContribs(data) {
-            let graph = data.substring(data.indexOf("graph-before-activity-overview") - 41, data.length);
-            graph = graph.substring(graph.indexOf(">") + 6, graph.indexOf("&lt;/svg>") + 6) + "&lt;/div>";
-            $("#github-graph").html("&lt;a href='https://github.com/krab7191'>My GitHub contributions&lt;/a>" +graph);
-            $("#github-graph > div").addClass("col-md-12").addClass("col-lg-12").addClass("mx-auto");
-          }
-        </code>
-        </pre>
-      </div>
-    </div>
+    <div class="github-card" data-github="krab7191" data-width="400" data-height="" data-theme="default"></div>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <div class="dark-mask"></div>
   </section>
   <section id="references">
     <div class="container">
       <div class="col-sm-12">
         <div class='text-center mb-4' data-animate='fadeInUp'>
-          Work I've done
+          Side projects
         </div>
         <div id="references-masonry" data-animate="fadeInUp">
           <div class="row">
@@ -724,8 +695,8 @@
             <a href="https://keybase.io/karstenrabe" class="external keybase wow fadeInUp">
               <img src="./img/keybase-icon.svg" class='keybase-img' />
             </a>
-            <a rel="me" href="https://mastodon.social/@karstenrabe" class="external mastodon wow fadeInUp"><img src="./img/mastodon-icon.png"
-                class='mastodon-img' alt="mastodon" />
+            <a rel="me" href="https://mastodon.social/@karstenrabe" class="external mastodon wow fadeInUp"><img
+                src="./img/mastodon-icon.png" class='mastodon-img' alt="mastodon" />
             </a>
           </p>
         </div>
@@ -742,12 +713,6 @@
       </div>
     </div>
   </footer>
-  <div id='siteMigrateModal'>
-    NOTE: this site is migrating from GH pages to <a
-      href="https://www.karstenrabe.dev/">https://www.karstenrabe.dev/</a>
-    Redirecting in...
-    <p id="redirectCounter"></p>
-  </div>
   <!-- JavaScript files-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -758,7 +723,6 @@
   <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
   <script src="js/front.js"></script>
-  <script src="js/github-graph.js"></script>
 </body>
 
 </html>
